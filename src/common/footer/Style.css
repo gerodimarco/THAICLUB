@@ -1,6 +1,6 @@
 footer {
     background-color: #1D2038;
-    padding: 100px 0;
+    padding: 30px;
     color: #fff;
   }
   footer  .h1 {
@@ -39,3 +39,7 @@ footer .box img {
     height: 40%;
     margin-left: 20%;
   }
+
+footer .box-2{
+  margin-left: 1.7rem;
+}

@@ -7,12 +7,10 @@
 }
 
 body {
-  background-color: #FEC74E;
   font-family: "Poppins", san-serif;
 }
 
 .background {
-  background-color: #FF6738 ;
   padding: 50px 0;
 }
 
@@ -158,7 +156,7 @@ input, button {
 
 /* ---------------------product ----------------- */
 .product {
-  background: #fff;
+  background: cornsilk;
   padding: 20px;
   position: relative;
   border-radius: 8px;
