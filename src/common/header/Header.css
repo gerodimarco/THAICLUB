@@ -21,7 +21,7 @@
 /* ---------------------Search ----------------- */
 .search{
     padding:20px;
-    background: aliceblue;
+    background: initial;
 }
 
 .search .logo img{
@@ -119,7 +119,7 @@
 header {
     height: 8vh;
     box-shadow: -1px 15px 17px -8px rgba(0, 0, 0, 0.1);
-    background-color: aliceblue ;
+    background-color: initial ;
 }
 
 header ul {
@@ -150,7 +150,7 @@ header ul li a:hover {
     top: 0;
     z-index: 1000;
     width: 100%;
-    background-color:aliceblue;
+    background-color:white;
     box-shadow: -1px 11px 24px -11px rgba(0, 0, 0, 0.2);
     transition: 0.5s;
 }
