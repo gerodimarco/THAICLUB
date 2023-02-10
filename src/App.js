@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route  } from "react-router-dom";
+
 import Header from './common/header/Header';
 import Pages from './pages/Pages';
 import AveData from './components/aves/AveData';
@@ -18,6 +19,14 @@ import PostreData from './components/postres/PostreData';
 import Cart from './common/cart/Cart';
 import Sdata from './components/shop/Sdata';
 import Footer from './common/footer/Footer';
+
+
+import Welcome from "./components/welcome/Welcome";
+
+import Register from "./components/register/Register";
+
+import Login from "./components/login/Login"
+
 
 function App() {
   // stpe 1: feth data from database
@@ -61,6 +70,17 @@ function App() {
      
      <Router>
       <Header CartItem ={CartItem}/>
+      <Route path="/log" exact>
+            <Login/>
+        </Route>
+
+        <Route path="/reg" exact>
+            <Register/>
+        </Route>
+          <Route path="/welcome">
+        </Route>  
+      
+      
       <Switch>
             <Route path="/" exact>
               <Pages carneItems ={carneItems} aveItems ={aveItems} pescadoItems ={pescadoItems} mariscoItems ={mariscoItems} 

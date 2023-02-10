@@ -21,16 +21,16 @@ const NavBar = () => {
                                 <Link to='/'>Inicio</Link>
                             </li>
                             <li>
-                                <Link to='/pages'>pages</Link>
+                                <Link to='/log'>Login</Link>
                             </li>
                             <li>
-                                <Link to='/user'>Cuenta Usuario</Link>
+                                <Link to='/reg'>Registro</Link>
                             </li>
                             <li>
-                                <Link to='/vendor'>vendor account</Link>
+                                <Link to='/admin'>Administrador</Link>
                             </li>
                             <li>
-                                <Link to='/track'>Mi orden</Link>
+                                <Link to='/orden'>Mi orden</Link>
                             </li>
                             <li>
                                 <Link to='/contact'>Contacto</Link>
