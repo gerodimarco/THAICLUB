@@ -5,7 +5,7 @@ import Register from "../components/regiter/Register"
 const Reg = () => {
   return (
     <>
-      <Register/>
+      <Register />
       
     </>
   )
