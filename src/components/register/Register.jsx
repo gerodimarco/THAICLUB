@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useState } from "react";
 
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import styles from "./styles.module.scss";
 
 const Register = () => {
