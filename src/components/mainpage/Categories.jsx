@@ -1,6 +1,6 @@
 import React from "react";
 
-
+import { Redirect, Route  } from "react-router-dom";
 
 const Categories = () => {
     const data = [
@@ -55,10 +55,12 @@ const Categories = () => {
                 {
                     data.map((value,index) => {
                         return(
-                            <div className="box f_flex" key={index}>
+                          <div className="box f_flex" key={index}>
+
                                 <img src={value.cateImg} alt="" />
                                 <span>{value.cateName}</span>
-                            </div>
+                           
+                          </div>  
                         )
                     })
                 }
