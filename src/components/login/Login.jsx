@@ -37,7 +37,7 @@ const Login = () => {
           setTimeout(() => {
             setMensaje("");
             localStorage.setItem("token", data?.usuario.token);
-            navigate(`/welcome`);
+            navigate(`/`);
           }, 1500);
         })
         .catch((error) => {

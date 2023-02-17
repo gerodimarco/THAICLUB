@@ -70,17 +70,17 @@ function App() {
      
      <Router>
       <Header CartItem ={CartItem}/>
+         
       <Route path="/log" exact>
-            <Login/>
-        </Route>
+        <Login/>
+      </Route>
+      <Route path="/reg" exact>
+        <Register/>
+      </Route>
+        <Route path="/welcome">
+      </Route> 
 
-        <Route path="/reg" exact>
-            <Register/>
-        </Route>
-          <Route path="/welcome">
-        </Route>  
-      
-      
+
       <Switch>
             <Route path="/" exact>
               <Pages carneItems ={carneItems} aveItems ={aveItems} pescadoItems ={pescadoItems} mariscoItems ={mariscoItems} 
@@ -89,14 +89,16 @@ function App() {
               addToCart = {addToCart} shopItems = {shopItems}/>
             </Route>
             
-
-
-
+            
             <Route path="/cart" exact>
               <Cart CartItem ={CartItem} addToCart = {addToCart} decreaseQty = {decreaseQty}/>
             </Route>
-            
+
+
       </Switch>
+
+      
+
       <Footer/>
     </Router>
 
