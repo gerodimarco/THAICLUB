@@ -288,3 +288,9 @@ input, button {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
 }
+
+@media screen and (max-width: 600px){
+  .grid2 {
+    grid-template-columns: 1fr;
+  }
+}

@@ -24,7 +24,7 @@ const PrevArrow = (props) => {
     )
 }
 
-export const PastaCard = ({pastaItems, addToCart}) => {
+const PostreCard = ({postreItems, addToCart}) => {
     const [count, setCount] = useState(0)
     const increment =() =>{
         setCount(count +1)
@@ -44,23 +44,20 @@ export const PastaCard = ({pastaItems, addToCart}) => {
             <>
                 <Slider {...settings}>
                 {
-                    pastaItems.map((pastaItems) => {
-                    return (    
+                    postreItems.map((postreItems) => {
+                        return ( 
                         <div className="box">
                             <div className="product mtop">
                                 <div className="img">
-                                    <span className="discount">{pastaItems.discount} %off</span>
-
-                                    {/* acá se cargaría la string url que se guarda en el campo del producto image o avatar */}
-                                    <img src={product.image} alt="" />
-
+                                    <span className="discount">{postreItems.discount} %off</span>
+                                    <img src={postreItems.cover}  alt="" />
                                     <div className="product-like">
                                         <label>{count}</label> <br />
                                         <i className="fa fa-heart" onClick={increment}></i>
                                     </div>
                                 </div>
                                 <div className="product-details">
-                                    <h3>{pastaItems.name}</h3>
+                                    <h3>{postreItems.name}</h3>
                                     <div className="rate">
                                         <i className="fa fa-star"></i>
                                         <i className="fa fa-star"></i>
@@ -70,8 +67,8 @@ export const PastaCard = ({pastaItems, addToCart}) => {
                                     </div>
                                     
                                     <div className="price">
-                                        <h4>{pastaItems.price}.00</h4>
-                                        <button onClick={() => addToCart(pastaItems)}>
+                                        <h4>{postreItems.price}.00</h4>
+                                        <button onClick={() => addToCart(postreItems)}>
                                             <i className="fa fa-plus"></i>
                                         </button>
                                     </div>
@@ -86,4 +83,4 @@ export const PastaCard = ({pastaItems, addToCart}) => {
         )
 }
 
-export default PastaCard
+export default PostreCard

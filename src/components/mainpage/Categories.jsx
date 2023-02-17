@@ -1,6 +1,9 @@
 import React from "react";
 
+const goToSection = (el) => {
+  document.getElementById(el).scrollIntoView()
 
+}
 
 const Categories = () => {
     const data = [
@@ -55,7 +58,7 @@ const Categories = () => {
                 {
                     data.map((value,index) => {
                         return(
-                            <div className="box f_flex" key={index}>
+                            <div id={value.cateName} onClick={() => goToSection(value.cateName)} className="box f_flex" key={index}>
                                 <img src={value.cateImg} alt="" />
                                 <span>{value.cateName}</span>
                             </div>
