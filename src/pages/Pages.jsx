@@ -20,24 +20,22 @@ import Shop from "../components/shop/Shop";
 
 import Wrapper from "../components/wrapper/Wrapper";
 
+const pages = [
+    'çarnes',
+    'aves',
+    'pescados'
+]
+
 const Pages = ( {carneItems, aveItems, pescadoItems, mariscoItems, pastaItems, ensaladaItems, sopaItems, salsaItems, aperitivoItems, bebidaItems, postreItems, CartItem, addToCart, shopItems}) => {
     return(
         <>
-            <Home CartItem = {CartItem}/>
-            <CarneDeals carneItems={carneItems} addToCart = {addToCart}/>
-            <AveDeals aveItems={aveItems} addToCart = {addToCart}/>
-            <PescadoDeals pescadoItems={pescadoItems} addToCart = {addToCart}/>
-            <MariscoDeals mariscoItems={mariscoItems} addToCart = {addToCart}/>
-            <PastaDeals pastaItems={pastaItems} addToCart = {addToCart}/>
-            <EnsaladaDeals ensaladaItems={ensaladaItems} addToCart = {addToCart}/>
-            <SopaDeals sopaItems={sopaItems} addToCart = {addToCart}/>
-            <SalsaDeals salsaItems={salsaItems} addToCart = {addToCart}/>
-            <AperitivoDeals aperitivoItems={aperitivoItems} addToCart = {addToCart}/>
-            <BebidaDeals bebidaItems={bebidaItems} addToCart = {addToCart}/>
-            <PostreDeals postreItems={postreItems} addToCart = {addToCart}/>
-            
-            
-            
+            {pages.forEach(product => {
+                return (
+                    <ProductsCard category={product}></ProductsCard>
+                    
+                )
+            })}
+
             <Shop shopItems={shopItems} addToCart={addToCart} />
            
             <Wrapper/>

@@ -58,7 +58,7 @@ const Categories = () => {
                 {
                     data.map((value,index) => {
                         return(
-                            <div id={value.cateName} onClick={() => goToSection(value.cateName)} className="box f_flex" key={index}>
+                            <div onClick={() => goToSection(value.cateName)} className="box f_flex" key={index}>
                                 <img src={value.cateImg} alt="" />
                                 <span>{value.cateName}</span>
                             </div>

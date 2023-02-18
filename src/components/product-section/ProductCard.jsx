@@ -1,8 +1,19 @@
-import React from "react"
+import React, { useEffect } from "react"
 import PostreCard from "./PostreCard"
 import "./postre.css"
 
-const PostreDeals = ({ postreItems, addToCart }) => {
+const PostreCard = ({ category, addToCart }) => {
+  const [products, setProducts] = useState([])
+  useEffect(()=> {
+    obtenerProductoPorCategoria()
+  }, [])
+
+
+async function obtenerProductoPorCategoria() {
+  const products = await axios.get(`server/products/${category}`);
+  setProducts(products)
+} 
+
   return (
     <>
       <section className='flash'>
@@ -11,7 +22,7 @@ const PostreDeals = ({ postreItems, addToCart }) => {
             <i className='fa fa-bolt'></i>
             <h1>Postres</h1>
           </div>
-          <PostreCard postreItems={postreItems} addToCart={addToCart} />
+          <PostreCard products={products} addToCart={addToCart} />
         </div>
       </section>
     </>
