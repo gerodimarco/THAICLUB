@@ -99,7 +99,7 @@ input, button {
 
 .category {
   width: 23%;
-  box-shadow: rgb(43, 52, 69 / 10%) 0 4px 16px;
+  /* box-shadow: rgb(43, 52, 69 / 10%) 0 4px 16px; */
   height: 510px;
   padding: 15px 0;
   border-radius: 5px;
@@ -159,7 +159,7 @@ input, button {
   padding: 20px;
   position: relative;
   border-radius: 8px;
-  box-shadow: rgb(3, 0, 71 / 9%) 0 1px 3px;
+  /* box-shadow: rgb(3, 0, 71 / 9%) 0 1px 3px; */
   margin: 10px;
 }
 .product h3 {
