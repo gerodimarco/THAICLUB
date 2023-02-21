@@ -22,7 +22,6 @@ body {
 .d_flex{
   display: flex;
   justify-content: space-between;
-  
 }
 
 .c_flex {
@@ -287,4 +286,41 @@ input, button {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
+}
+
+@media screen and (max-width: 600px){
+  .grid2 {
+    grid-template-columns: 1fr;
+  }
+  .homeSlide ul {
+    display: none;
+  }
+  .contentWidth {
+    width:100% ;
+  }
+  .category {
+    display: none;
+  }
+  .homeSlide .box img{
+    display:none;
+  }
+  .search-box {
+    display:none;
+  }
+  .product {
+    margin:0px;
+    display:table-header-group;
+  }
+  .control-btn .next, .control-btn .prev {
+    display: none;
+  }
+  .product h3{
+    font-size:15px;
+  }
+  .flash .box img{
+    width: 90px;
+  }
+  .search .logo img {
+    width: 100px;
+  }
 }
