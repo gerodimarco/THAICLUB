@@ -25,7 +25,7 @@ const Shop = ({ shopItems, addToCart }) => {
             </div>
           </div>
         </div>
-      </section>
+      </section> 
     </>
   )
 }

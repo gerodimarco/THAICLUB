@@ -9,12 +9,7 @@ const NavBar = () => {
         <div>
             <header className="header">
                 <div className="container d_flex">
-                    <div className="categories d_flex">
-                        <span className="fa-solid fa-border-all"></span>
-                            <h4>
-                                Categories <i className="fa fa-chevron-down"></i>
-                            </h4>
-                    </div>
+                    
                     <div className="navlink">
                         <ul className={MobileMenu ? "nav-links-MobileMenu" : "link f_flex capitalize"} onClick={() => setMobileMenu(false)}>
                             <li>
