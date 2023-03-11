@@ -31,7 +31,7 @@ const PastaData = {
       {
         id: 44,
         discount: 50,
-        cover: "./images/pastas/pastas05.jpg",
+        cover: "./images/pastas/pasta05.jpg",
         name: "Sinantomas",
         price: 1300,
       },

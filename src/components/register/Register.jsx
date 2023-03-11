@@ -56,8 +56,8 @@ const Register = () => {
   return (
     <>
       <div className={styles.formContainer}>
-        <h3>Bienvenido a la pagina</h3>
-        <h2>De Registro!</h2>
+        
+        <h2>Registro</h2>
         <form onSubmit={(e) => onSubmit(e)}>
           <div className={styles.inputContainer}>
             <div className={styles.left}>
@@ -68,7 +68,7 @@ const Register = () => {
                 name="nombre"
                 id="nombre"
                 type="text"
-                placeholder="Nombre..."
+                placeholder="Name..."
                 autoComplete="off"
               />
             </div>
@@ -93,7 +93,7 @@ const Register = () => {
                 name="correo"
                 id="correo"
                 type="email"
-                placeholder="Correo..."
+                placeholder="email..."
                 autoComplete="off"
               />
             </div>
@@ -118,7 +118,7 @@ const Register = () => {
                 name="contraseña"
                 id="contraseña"
                 type="password"
-                placeholder="Contraseña..."
+                placeholder="Password..."
                 autoComplete="off"
               />
             </div>

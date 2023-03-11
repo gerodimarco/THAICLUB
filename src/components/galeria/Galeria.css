@@ -1,0 +1,126 @@
+
+*body {
+    margin-top:50px;
+    background-color: white;
+}
+
+.titulin{
+    margin-top:10px;
+    margin-right: 50px;
+    color:#FF6738;
+    font-size: 30px;
+    font-weight: bold;
+     
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 4rem;
+    color:#FF6738;
+}
+
+
+.form {
+    background-color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    border-radius: 8px;
+    min-width: 300px;
+    width: 60%;
+    max-width: 500px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.btn {
+    margin-top: 10px;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--accent-color);
+    background-color:  #FF6738;
+    color: black;
+    border-radius: 5px;
+    transition: 250ms;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.btn:hover {
+    border: 1px solid;
+    accent-color: #0abba3;
+    background-color: #0acf87;
+    color: black;
+}
+
+.alert {
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    position: fixed;
+    top: 2rem;
+    right: 0rem;
+    min-width: 200px;
+}
+
+.alert-success {
+    background-color: var(--alert-success-bg-color);
+    color: var(--alert-success-text-color);
+}
+
+.alert-danger {
+    background-color: var(--alert-danger-bg-color);
+    color: var(--alert-danger-text-color);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-brand {
+    font-size: 24px;
+    color: #050505;
+    padding: 30px;
+}
+
+.nav-items {
+    list-style: none;
+    display: flex;
+    padding: 20px;
+    
+    
+}
+
+.nav-item > a {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #050505;
+    padding-bottom: 2px;
+    font-weight: 500;
+    text-transform: uppercase;
+    justify-content: space-between;
+    width: 50%;
+    padding: 15px;
+}
+.nav-item > a:hover {
+    border-bottom: 4px solid ;
+    accent-color: #0abba3;
+}
+img {
+    border-radius: 5px;
+}
+.gallery {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.pagination {
+    margin-bottom: 2rem;
+    
+    
+}
+
+

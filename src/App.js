@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
 import './App.css';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import Header from './common/header/Header';
 import Pages from './pages/Pages';
@@ -24,8 +24,23 @@ import Footer from './common/footer/Footer';
 import Welcome from "./components/welcome/Welcome";
 
 import Register from "./components/register/Register";
-
 import Login from "./components/login/Login"
+import Galeria from "./components/galeria/Galeria"
+import Upload from './components/galeria/Upload';
+import Contacto from './components/contacto/Contacto';
+import Acerca from './components/acerca/Acerca';
+
+
+import Home from "./paginas/home/Home";
+import Logeo from "./paginas/login/Logeo";
+import List from "./paginas/list/List";
+import Single from "./paginas/single/Single";
+import New from "./paginas/new/New";
+import { productInputs, userInputs } from "./formSource";
+
+
+
+import Admin from './pages/Admin';
 
 
 function App() {
@@ -69,38 +84,60 @@ function App() {
      
      
      <Router>
-      <Header CartItem ={CartItem}/>
-         
-      <Route path="/log" exact>
-        <Login/>
-      </Route>
-      <Route path="/reg" exact>
-        <Register/>
-      </Route>
+        <Header CartItem ={CartItem}/>
+          
+        <Route path="/log" exact>
+          <Login/>
+        </Route>
+        <Route path="/reg" exact>
+          <Register/>
+        </Route>
+
+        <Route path="/acer" exact>
+          <Acerca/>
+        </Route>
+
+        <Route path="/cont" exact>
+          <Contacto/>
+        </Route>
+
+        <Switch>
+            <Route component={Upload} path="/upload" />
+            <Route component={Galeria} path="/gal" />
+        </Switch> 
+        
+        <Route path="/Admin" exact>
+            <Home/> 
+        </Route>
+
+        
+        
         <Route path="/welcome">
-      </Route> 
+        </Route> 
 
 
-      <Switch>
-            <Route path="/" exact>
-              <Pages carneItems ={carneItems} aveItems ={aveItems} pescadoItems ={pescadoItems} mariscoItems ={mariscoItems} 
-              pastaItems ={pastaItems} ensaladaItems ={ensaladaItems} sopaItems ={sopaItems} salsaItems ={salsaItems}
-              aperitivoItems ={aperitivoItems} bebidaItems ={bebidaItems} postreItems ={postreItems} 
-              addToCart = {addToCart} shopItems = {shopItems}/>
-            </Route>
-            
-            
-            <Route path="/cart" exact>
-              <Cart CartItem ={CartItem} addToCart = {addToCart} decreaseQty = {decreaseQty}/>
-            </Route>
+        <Switch>
+              <Route path="/" exact>
+                <Pages carneItems ={carneItems} aveItems ={aveItems} pescadoItems ={pescadoItems} mariscoItems ={mariscoItems} 
+                pastaItems ={pastaItems} ensaladaItems ={ensaladaItems} sopaItems ={sopaItems} salsaItems ={salsaItems}
+                aperitivoItems ={aperitivoItems} bebidaItems ={bebidaItems} postreItems ={postreItems} 
+                addToCart = {addToCart} shopItems = {shopItems}/>
+              </Route>
+              
+              
+              <Route path="/cart" exact>
+                <Cart CartItem ={CartItem} addToCart = {addToCart} decreaseQty = {decreaseQty}/>
+              </Route>
+        </Switch>
 
+        
 
-      </Switch>
-
-      
-
-      <Footer/>
+        <Footer/>
     </Router>
+
+
+
+
 
 
     </>

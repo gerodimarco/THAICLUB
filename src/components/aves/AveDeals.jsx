@@ -5,6 +5,7 @@ import "./ave.css"
 const AveDeals = ({ aveItems, addToCart }) => {
   return (
     <>
+      <section id="aves">
       <section className='flash'>
         <div className='container'>
           <div className='heading f_flex'>
@@ -13,6 +14,7 @@ const AveDeals = ({ aveItems, addToCart }) => {
           </div>
           <AveCard aveItems={aveItems} addToCart={addToCart} />
         </div>
+      </section>
       </section>
     </>
   )
