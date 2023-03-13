@@ -10,7 +10,10 @@
     color:#FF6738;
     font-size: 30px;
     font-weight: bold;
+<<<<<<< HEAD
      
+=======
+>>>>>>> 21018772db581f91eae7206d60fd799432153768
 }
 
 .title {
@@ -88,7 +91,11 @@
     list-style: none;
     display: flex;
     padding: 20px;
+<<<<<<< HEAD
     background-color: #FF6738;
+=======
+    
+>>>>>>> 21018772db581f91eae7206d60fd799432153768
     
 }
 
@@ -122,6 +129,7 @@ img {
     
     
 }
+<<<<<<< HEAD
 .pagination-previous {
     background-color: #FF6738;
     
@@ -147,3 +155,7 @@ img {
 .pagination-item {
     background-color: #FF6738;
 }
+=======
+
+
+>>>>>>> 21018772db581f91eae7206d60fd799432153768
