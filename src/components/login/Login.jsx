@@ -55,8 +55,8 @@ const Login = () => {
   return (
     <>
       <div className={styles.formContainer}>
-        <h3>Bienvenido a la pagina</h3>
-        <h2>De Inicio de Sesión!</h2>
+        
+        <h2>Inicio de Sesión</h2>
         <form onSubmit={(e) => onSubmit(e)}>
           <div className={styles.inputContainer}>
             <div className={styles.left}>
@@ -67,7 +67,7 @@ const Login = () => {
                 name="correo"
                 id="correo"
                 type="email"
-                placeholder="Correo..."
+                placeholder="email..."
                 autoComplete="off"
               />
             </div>
@@ -92,7 +92,7 @@ const Login = () => {
                 name="contraseña"
                 id="contraseña"
                 type="password"
-                placeholder="Contraseña..."
+                placeholder="Password..."
                 autoComplete="off"
               />
             </div>

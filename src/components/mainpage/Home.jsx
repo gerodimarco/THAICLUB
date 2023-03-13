@@ -1,6 +1,6 @@
 import React from "react";
 import  Categories  from "./Categories";
-import SlideCard from "./SlideCard";
+
 import Slider from "./Slider";
 import "./Home.css"
 const Home = () => {

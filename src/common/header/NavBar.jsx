@@ -25,10 +25,16 @@ const NavBar = () => {
                                 <Link to='/admin'>Administrador</Link>
                             </li>
                             <li>
+                                <Link to='/gal'>Galeria</Link>
+                            </li>
+                            <li>
                                 <Link to='/orden'>Mi orden</Link>
                             </li>
                             <li>
-                                <Link to='/contact'>Contacto</Link>
+                                <Link to='/cont'>Contacto</Link>
+                            </li>
+                            <li>
+                                <Link to='/acer'>Acerca de Nosotros</Link>
                             </li>
                         </ul>
                         <button className='toggle' onClick={() =>setMobileMenu(!MobileMenu)}>
