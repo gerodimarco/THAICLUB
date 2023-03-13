@@ -10,9 +10,7 @@ const GaleriaDeals = () => {
         <div className="nav-brand">Club-Thai</div>
         
         <ul className="nav-items">
-            <li className="nav-item">
-                <Link to="/galeria">Galeria</Link>
-            </li>
+            
             <li className="nav-item">
                 <Link to="/upload">Subir</Link>
             </li>

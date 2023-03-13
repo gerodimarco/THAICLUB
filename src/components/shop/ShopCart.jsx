@@ -12,7 +12,7 @@ const ShopCart = ({ shopItems, addToCart }) => {
         return (
           <div className='box'>
             <div className='product mtop'>
-              <div className='img'>
+              <div className='img-shop'>
                 <span className='discount'>{shopItems.discount}% Off</span>
                 <img src={shopItems.cover} alt='' />
                 <div className='product-like'>
