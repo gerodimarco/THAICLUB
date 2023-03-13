@@ -1,3 +1,5 @@
+import React from 'react'
+import ReactDOM from 'react-dom'
 import "./list.scss"
 import Sidebar from "../../components/sidebar/Sidebar"
 import Navbar from "../../components/navbar/Navbar"

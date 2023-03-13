@@ -1,3 +1,5 @@
+import React from 'react'
+import ReactDOM from 'react-dom'
 import Featured from "../../components/featured/Featured"
 import Navbar from "../../components/navbar/Navbar"
 import Sidebar from "../../components/sidebar/Sidebar"

@@ -1,3 +1,5 @@
+import React from 'react'
+import ReactDOM from 'react-dom'
 import "./widget.scss";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";

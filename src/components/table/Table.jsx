@@ -1,3 +1,5 @@
+import React from 'react'
+import ReactDOM from 'react-dom'
 import "./table.scss"
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
